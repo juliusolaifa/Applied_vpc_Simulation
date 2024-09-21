@@ -12,4 +12,6 @@ library(SimulationStudyVPC)
 source(file.path(getwd(), "sim_setup.R"))
 
 
-main(10)
+#There are 10 groups(clusters, starains)
+#gs is group sample size or strain sample size
+main(gs=10)
