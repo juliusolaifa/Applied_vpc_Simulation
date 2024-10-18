@@ -7,11 +7,17 @@ if (!requireNamespace("SimulationStudyVPC", quietly = TRUE)) {
 }
 
 library(SimulationStudyVPC)
-
-
 source(file.path(getwd(), "sim_setup.R"))
 
 
-#There are 10 groups(clusters, starains)
+#There are 10 groups(clusters, strains)
 #gs is group sample size or strain sample size
-main(gs=10)
+
+# Caompare models
+main_cm(gs=10)
+
+# Compare groups
+#main_cg(gs=10)
+
+# Compare points
+main_pt(gs=10)
