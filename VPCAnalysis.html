@@ -538,7 +538,9 @@ ci &lt;- confint(vpcs,type=&quot;bootstrap&quot;)</code></pre>
 lower &lt;- as.numeric(ci[,&quot;Lower&quot;])
 upper &lt;- as.numeric(ci[,&quot;Upper&quot;])
 contains_trueVpc &lt;- (true_vpc &gt;= lower) &amp; (true_vpc &lt;= upper)
-cov_prob &lt;- mean(contains_trueVpc)</code></pre>
+cov_prob &lt;- mean(contains_trueVpc)
+cov_prob</code></pre>
+<pre><code>## [1] 0.94</code></pre>
 <pre class="r"><code>confint(vpcs,type=&quot;classical&quot;)</code></pre>
 <pre><code>## Warning in sqrt(stats::vcov(vpcObj)): NaNs produced
 
